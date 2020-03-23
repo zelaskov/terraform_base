@@ -11,7 +11,7 @@ variable "AWS_INSTANCE_NAME" {
 variable "AWS_AMI_ID" {
   description = "ID of AMI to use for the instance"
   type        = string
-  default     = "ami-099a8245f5daa82bf"
+  default     = "ami-04d5cc9b88f9d1d39"
 }
 
 variable "AWS_INSTANCE_TYPE" {
