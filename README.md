@@ -32,3 +32,17 @@ Repo that contains basic setup of terraform templates that can be used to create
 ### RDS template
 
 1. We are creating RDS Postgres instance along with VPC, SG and Subnet. If we dont want to create new ones we just need to specify those resources in `rds/vars.tf`
+
+### s3
+
+1. Example s3 template that can be used along with dynamodb to store tfstate files. You just need terraform backend as needed --> `terraform {
+  backend "s3" {
+     # Replace bucket name with your own
+    bucket         = "example-bucket"
+    key            = "global/s3/*/terraform.tfstate"
+    region         = "your-region"
+    dynamodb_table = "your dynamodb table"
+    encrypt        = true
+  }
+}`
+To initialize s3 backend run again `terraform init` in said directory.
