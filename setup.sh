@@ -7,6 +7,7 @@ RESOURCE_NAMES=(
   "subnet"
   "iam"
   "ebs_attachment_example"
+  "rds"
 )
 
 echo Please, provide your AWS Access Key
