@@ -28,3 +28,7 @@ Repo that contains basic setup of terraform templates that can be used to creati
 
 1. This template is example of how making group and attach users to it.
 2. It's kinda tricky to make it 100 % customizable because of different dependencies between the resources.
+
+### RDS template
+
+1. We are creating RDS Postgres instance with along with VPC, SG and Subnet. If we dont want to create new ones we just need to specify those resources in `rds/vars.tf`
