@@ -22,3 +22,9 @@ Repo that contains basic setup of terraform templates that can be used to creati
 4. Terraform will inform you about planned actions and create resources.
 5. Terraform saves config of created resources in `tfstate` files. If you ever wanna check again what did you create, run `terraform show` in said directory.
 6. If you wanna to destroy created resources, go into directory and type `terraform destroy`. Terraform will ask for confirmation and your resources will be deleted, based on `tfstate` file.
+
+
+### IAM template
+
+1. This template is example of how making group and attach users to it.
+2. It's kinda tricky to make it 100 % customizable because of different dependencies between the resources.
