@@ -35,3 +35,9 @@ variable "AWS_SECURITY_GROUP_EGRESS_CIDR" {
   description = "CIDR block of SG"
   default     = ["0.0.0.0/0"]
 }
+
+variable "AWS_SUBNET_TAG_NAME" {
+  description = "Name of your security group - tag"
+  type        = string
+  default     = "example_security_group"
+}

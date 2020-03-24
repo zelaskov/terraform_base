@@ -19,4 +19,7 @@ resource "aws_security_group" "example_sg" {
     protocol    = var.AWS_SECURITY_GROUP_EGRESS_PROTOCOL
     cidr_blocks = var.AWS_SECURITY_GROUP_EGRESS_CIDR
   }
+  tags = {
+    Name = var.AWS_SUBNET_TAG_NAME
+  }
 }
