@@ -4,7 +4,7 @@ provider "aws" {
   region     = var.AWS_REGION
 }
 
-resource "aws_subnet" "example subnet" {
+resource "aws_subnet" "example_subnet" {
   vpc_id     = var.AWS_VPC_ID
   cidr_block = var.AWS_SUBNET_CIDR
   tags = {
