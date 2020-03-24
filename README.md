@@ -37,7 +37,6 @@ Repo that contains basic setup of terraform templates that can be used to create
 
 1. Example s3 template that can be used along with dynamodb to store tfstate files. You just need terraform backend as needed --> `terraform {
   backend "s3" {
-     # Replace bucket name with your own
     bucket         = "example-bucket"
     key            = "global/s3/*/terraform.tfstate"
     region         = "your-region"
