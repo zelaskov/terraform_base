@@ -7,7 +7,7 @@ Repo that contains basic setup of terraform templates that can be used to create
 1. AWS Access Key, Secret Key and name of aws region
 2. That's basically it
 
-## REMINDER - if u cant do something via awscli then u can't do it via terraform either - it means that you don't have the necessary access to the resources.
+## REMINDER - if u can't do something via awscli then u can't do it via terraform either - it means that you don't have the necessary access to the resources.
 
 ## First Time run
 
