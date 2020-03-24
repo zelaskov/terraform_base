@@ -4,6 +4,7 @@ RESOURCE_NAMES=(
   "ec2"
   "vpc"
   "sg"
+  "subnet"
 )
 
 echo Please, provide your AWS Access Key
