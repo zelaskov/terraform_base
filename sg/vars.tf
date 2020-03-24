@@ -28,12 +28,10 @@ variable "AWS_SECURITY_GROUP_EGRESS_PROTOCOL" {
 
 variable "AWS_SECURITY_GROUP_INGRESS_CIDR" {
   description = "CIDR block of SG"
-  type        = string
-  default     = "10.0.0.0/16"
+  default     = ["10.0.0.0/16"]
 }
 
 variable "AWS_SECURITY_GROUP_EGRESS_CIDR" {
   description = "CIDR block of SG"
-  type        = string
-  default     = "0.0.0.0./0"
+  default     = ["0.0.0.0/0"]
 }
