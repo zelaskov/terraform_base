@@ -3,6 +3,7 @@
 RESOURCE_NAMES=(
   "ec2"
   "vpc"
+  "sg"
 )
 
 echo Please, provide your AWS Access Key
